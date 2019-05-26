@@ -60,5 +60,6 @@
       "color-accent-contrast": "var(--color-dark-contrast)"
     },
     "output": "src/assets/react-toolbox"
-  }
+  },
+  "proxy": "http://localhost:8000"
 }
