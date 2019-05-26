@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 const multer = require('multer');
 const upload = multer({ dest : '/uploads/'});
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 require("dotenv").config();
 
 app.use(bodyParser.json());
