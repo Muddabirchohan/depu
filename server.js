@@ -11,8 +11,6 @@ app.use(bodyParser.json());
 //initializing routes
 app.use('/api',routers);
 
-
-app.use(express.static('uploads'));
 //
 app.use(express.static('public'));
 
