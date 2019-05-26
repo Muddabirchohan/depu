@@ -22,7 +22,6 @@
     "eject": "react-scripts eject",
     "toolbox": "react-toolbox-themr"
   },
- 
   "reactToolbox": {
     "include": [
       "AUTOCOMPLETE",
