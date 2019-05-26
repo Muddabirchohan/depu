@@ -191,117 +191,120 @@ class App extends Component {
 
     console.log(this.state.filteredArray);
     return (
-      <ThemeProvider theme={theme}>
-        <div className="App">
-          <AppBar title='React Toolbox' leftIcon='menu' >
-            {/* <Link to="/description"> desc </Link> */}
-          </AppBar>
+      <div> 
+        <p> hello </p>
+      </div>
+//       <ThemeProvider theme={theme}>
+//         <div className="App">
+//           <AppBar title='React Toolbox' leftIcon='menu' >
+//             {/* <Link to="/description"> desc </Link> */}
+//           </AppBar>
 
 
-          <br /><br /><br /><br />
+//           <br /><br /><br /><br />
 
-          <div>
+//           <div>
 
-            {/* <form method="post" onSubmit={this.sendData}>
+//             {/* <form method="post" onSubmit={this.sendData}>
 
-              <input type="text" onChange={this.handleChangemyname} /> <br />
-              <input type="password" onChange={this.handleChangemyvote} /> <br />
-              <input type="submit" />
+//               <input type="text" onChange={this.handleChangemyname} /> <br />
+//               <input type="password" onChange={this.handleChangemyvote} /> <br />
+//               <input type="submit" />
 
-            </form>
- */}
+//             </form>
+//  */}
 
 
-            <br/><br/><br/>
+//             <br/><br/><br/>
 
-            <input type="text" onChange={this.handleChangeSearch}/>  
+//             <input type="text" onChange={this.handleChangeSearch}/>  
 
-            <br /><br /><br /><br />
+//             <br /><br /><br /><br />
 
-          </div>
+//           </div>
 
-          {!this.state.change && <div>
+//           {!this.state.change && <div>
 
-            {/* <form method="post" > 
+//             {/* <form method="post" > 
 
-           <input type="text" name="name"/>
+//            <input type="text" name="name"/>
 
-        </form> */}
-            <div style={{ width: '320px', marginLeft: '500px' }}>
-              <Card>
-                <Form onSubmit={this.gotoLogin} style={{ height: '260px', paddingLeft: '5px', paddingRight: '5px' }} >
-                  <h1> Login Form </h1>
-                  <FormControl
-                    type="text"
-                    value={this.state.name}
-                    placeholder="Enter Name"
-                    name="name"
-                    onChange={this.handleChangeName}
+//         </form> */}
+//             <div style={{ width: '320px', marginLeft: '500px' }}>
+//               <Card>
+//                 <Form onSubmit={this.gotoLogin} style={{ height: '260px', paddingLeft: '5px', paddingRight: '5px' }} >
+//                   <h1> Login Form </h1>
+//                   <FormControl
+//                     type="text"
+//                     value={this.state.name}
+//                     placeholder="Enter Name"
+//                     name="name"
+//                     onChange={this.handleChangeName}
 
-                  />
+//                   />
 
-                  <br />
-                  <FormControl
-                    type="password"
-                    value={this.state.vote}
-                    name="vote"
-                    placeholder="Enter pass"
-                    onChange={this.handleChange}
-                  />
-                  <br /><br /><br />
-                  {/* <input type="submit"/> */}
-                  <Button type="submit" bsStyle="info"> submit </Button>
-                </Form>
-              </Card>
-            </div>
-            <br /><br />
-          </div>
+//                   <br />
+//                   <FormControl
+//                     type="password"
+//                     value={this.state.vote}
+//                     name="vote"
+//                     placeholder="Enter pass"
+//                     onChange={this.handleChange}
+//                   />
+//                   <br /><br /><br />
+//                   {/* <input type="submit"/> */}
+//                   <Button type="submit" bsStyle="info"> submit </Button>
+//                 </Form>
+//               </Card>
+//             </div>
+//             <br /><br />
+//           </div>
 
-          }
+//           }
 
-          <div>
-            <h3> Filter By Category </h3>
-            <select onChange={this.getFiltered}>
-            <option value="selected" > selected  </option>
-            <option value="native" > native  </option>
-              <option value="frontend" id="fe"> Front End  </option>
-              <option value="backend" id="be"> Back End </option>
-            </select>
-          </div>
+//           <div>
+//             <h3> Filter By Category </h3>
+//             <select onChange={this.getFiltered}>
+//             <option value="selected" > selected  </option>
+//             <option value="native" > native  </option>
+//               <option value="frontend" id="fe"> Front End  </option>
+//               <option value="backend" id="be"> Back End </option>
+//             </select>
+//           </div>
 
-          {this.state.change && <div className="div1" >
+//           {this.state.change && <div className="div1" >
 
-            {this.state.filteredArray.map((obj) => {
+//             {this.state.filteredArray.map((obj) => {
               
-const newTo = { 
-  pathname: "/description", 
-  state: this.state.details 
-};
-              return (
-                <Card style={{ width: '270px', height: '280px', marginTop: '35px', marginLeft: '45px' }}>
-                  <p> <h5> {obj._id}   </h5> </p>
-                  <p> <img src={obj.image} width="85%" /></p>
-                  <p> <h5> {obj.name}  </h5> </p>
-                  <p> <Link to={newTo}>  <Button bsStyle="info" onClick={this.getProductDetails.bind(this,obj)}> Details  </Button> </Link>  </p>
-                  {/* <p> <Link to="/description/{obj._id}">   Details </Link> </p> */}
-                  {/* <p> <Glyphicon glyph="star" /> </p> */}
-                  {/* <p> <h5> {obj.vote} </h5> </p> */}
-                </Card>
-              )
-      })}
+// const newTo = { 
+//   pathname: "/description", 
+//   state: this.state.details 
+// };
+//               return (
+//                 <Card style={{ width: '270px', height: '280px', marginTop: '35px', marginLeft: '45px' }}>
+//                   <p> <h5> {obj._id}   </h5> </p>
+//                   <p> <img src={obj.image} width="85%" /></p>
+//                   <p> <h5> {obj.name}  </h5> </p>
+//                   <p> <Link to={newTo}>  <Button bsStyle="info" onClick={this.getProductDetails.bind(this,obj)}> Details  </Button> </Link>  </p>
+//                   {/* <p> <Link to="/description/{obj._id}">   Details </Link> </p> */}
+//                   {/* <p> <Glyphicon glyph="star" /> </p> */}
+//                   {/* <p> <h5> {obj.vote} </h5> </p> */}
+//                 </Card>
+//               )
+//       })}
 
-            <br /><br /><br /><br />
-          </div>
+//             <br /><br /><br /><br />
+//           </div>
 
-          }
+//           }
 
-          <br /><br /><br /><br />
-
-
+//           <br /><br /><br /><br />
 
 
-        </div>
-      </ThemeProvider >
+
+
+//         </div>
+//       </ThemeProvider >
     );
   }
 }
