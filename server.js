@@ -43,6 +43,6 @@ mongoose.Promise = global.Promise;
 //     console.log("running at port 400")
 // })
 
-app.set(port,function(){
+app.listen(port,function(){
     console.log("now listening for requests");
 })
