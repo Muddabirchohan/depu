@@ -3,8 +3,6 @@ const routers = require('./routers/api');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
-const multer = require('multer');
-const upload = multer({ dest : '/uploads/'});
 const port = process.env.PORT || 8000;
 require("dotenv").config();
 
